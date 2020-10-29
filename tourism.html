@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+<style>
+.bg{
+background-image: url("https://image.freepik.com/free-photo/soft-wave-sandy-beach_28668-189.jpg");
+height: 100vh;
+background-size: cover;
+}
+.top-section{
+background-color: white;
+text-align: center;
+height: 200px;
+border-radius: 10px;
+}
+.button{
+border-width: 0px;
+border-radius: 30px;
+background-color: dodgerblue;
+font-size: 18px;
+padding: 5px;
+width: 150px;
+}
+.head1{
+font-weight: bold;
+}
+.bg-top{
+background-image: url("https://image.freepik.com/free-vector/pastel-blue-banner-background_1048-11857.jpg");
+height: 200vh;
+background-size: cover;
+}
+.sections{
+background-color: white;
+margin: 30px;
+border-radius: 20px;
+}
+.fav-head{
+font-weight: bold;
+padding: 16px;
+}
+.ims{
+width: 300px;
+height: 200px;
+}
+.h-name{
+font-weight: bold;
+}
+.bg-3{
+background-image: url("https://img2.goodfon.com/wallpaper/nbig/9/ce/background-water-voda-fon.jpg");
+height: 100vh;
+background-size: cover;
+}
+.detail-view{
+margin: 50px;
+}
+.h-detail{
+font-weight: bold;
+padding: 16px;
+}
+.para{
+background-color: white;
+padding: 30px;
+}
+</style>
+  <body>
+<div id="section1">
+<div class="bg d-flex flex-column justify-content-end">
+<div class="top-section">
+<h1 class="head1">Tourism</h1>
+<p>Plan your trip wherever you want to go.</p>
+<button class="button" onclick="display('section2')">Get started</button>
+</div>
+</div>
+</div>
+<div id="section2">
+<div class="bg-top">
+<h1 class="fav-head">Favourite places</h1>
+<div class="sections d-flex flex-row" onclick="display('section4')">
+<div>
+<h1 class="h-name">Taj mahal</h1>
+<p>The Taj Mahal is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" class="ims">
+</div>
+<div class="sections d-flex flex-row">
+<div>
+<h1 class="h-name">Golden Temple</h1>
+<p>The Golden Temple, also known as Harmandir Sahib, meaning "abode of God" or Darbār Sahib, meaning "exalted court", is a gurdwara located in the city of Amritsar, Punjab, India.</p>
+</div>
+<img src="https://curlytales.com/wp-content/uploads/2020/04/2-GOIBIBO-1.jpg" class="ims">
+</div>
+<div class="sections d-flex flex-row">
+<div>
+<h1 class="h-name">Mysore palace</h1>
+<p>The Mysore Palace is a historical palace and the royal residence at Mysore in the Indian State of Karnataka. It is the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. .</p>
+</div>
+<img src="https://curlytales.com/wp-content/uploads/2019/01/depositphotos_116925416-stock-photo-mysore-palace-in-mysore-india-1280x720.jpg" class="ims">
+</div>
+<div class="sections d-flex flex-row">
+<div>
+<h1 class="h-name">Varanasi temple</h1>
+<p>Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites.</p>
+</div>
+<img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/Temples-In-Varanasi-cover_8th-Dec.jpg" class="ims">
+</div>
+<button class="btn btn-dark" onclick="display('section1')">Back</button>
+</div>
+</div>
+</div>
+<div id="section4">
+<div class="bg-3">
+<h1 class="h-detail">Detailed View</h1>
+<div class="detail-view">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.theconversation.com/files/228846/original/file-20180723-189310-1ymcybu.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.odysseytours.net/article/21000/a-view-of-the-taj-mahal-across-the-yamuna-river_18272.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.holidify.com/images/cmsuploads/compressed/Taj_mahal_in_independence_day_20171024202456.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="para">
+<p>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage". It is regarded by many as the best example of Mughal architecture and a symbol of India's rich history. The Taj Mahal attracts 7–8 million visitors a year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.The Taj Mahal is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself </p>
+</div>
+<button class="btn btn-dark" onclick="display('section2')">Back</button>
+</div>
+</div>
+ <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
